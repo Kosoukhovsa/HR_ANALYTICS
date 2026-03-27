@@ -1,0 +1,7 @@
+requests
+pandas
+jupyterlab
+sqlalchemy
+psycopg2-binary
+python-dotenv
+matplotlib
