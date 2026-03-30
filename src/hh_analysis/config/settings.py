@@ -10,3 +10,5 @@ LOGS_DIR = BASE_DIR / "logs"
 
 HH_API_BASE_URL = "https://api.hh.ru"
 REQUEST_TIMEOUT = 30
+
+HH_AREAS_URL = "https://api.hh.ru/areas"

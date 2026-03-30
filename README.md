@@ -2,65 +2,33 @@
 
 Проект для загрузки, хранения и анализа вакансий HH.ru.
 
-hh_analysis/
-│
-├── README.md                # описание проекта
-├── requirements.txt         # зависимости Python
-├── .env                     # переменные окружения
-├── .gitignore               # правила игнорирования Git
-│
-├── notebooks/               # Jupyter notebooks для анализа
-│   └── .gitkeep
-│
-├── data/                    # данные проекта
-│   ├── raw/                 # сырые данные из API
-│   ├── interim/             # промежуточные данные
-│   ├── processed/           # готовые для анализа данные
-│   └── exports/             # выгрузки результатов
-│
-├── logs/                    # логи ETL процессов
-│   └── .gitkeep
-│
-├── sql/                     # SQL скрипты
-│   ├── ddl/                 # создание таблиц
-│   ├── dml/                 # загрузка данных
-│   └── queries/             # аналитические SQL запросы
-│
-├── scripts/                 # вспомогательные скрипты
-│   └── .gitkeep
-│
-├── tests/                   # тесты проекта
-│   └── .gitkeep
-│
-└── src/                     # исходный код Python
-    └── hh_analysis/         # основной Python пакет
-        │
-        ├── __init__.py
-        │
-        ├── config/          # настройки проекта
-        │   └── settings.py
-        │
-        ├── api/             # работа с HH API
-        │   └── hh_client.py
-        │
-        ├── storage/         # работа с хранилищами
-        │   ├── files.py
-        │   └── postgres.py
-        │
-        ├── transform/       # преобразование данных
-        │   ├── areas.py
-        │   └── vacancies.py
-        │
-        ├── pipelines/       # ETL пайплайны
-        │   ├── load_areas.py
-        │   └── load_vacancies.py
-        │
-        ├── models/          # модели данных
-        │   └── schemas.py
-        │
-        └── utils/           # вспомогательные функции
-            └── logger.py
+``` text
 
+hh_analysis/
+├── README.md
+├── requirements.txt
+├── data/
+│   ├── raw/
+│   ├── interim/
+│   ├── processed/
+│   └── exports/
+├── notebooks/
+├── logs/
+├── sql/
+│   ├── ddl/
+│   ├── dml/
+│   └── queries/
+├── tests/
+└── src/
+    └── hh_analysis/
+        ├── config/
+        ├── api/
+        ├── storage/
+        ├── transform/
+        ├── pipelines/
+        ├── models/
+        └── utils/
+```
 
 
 | Папка                        | Назначение               | Что хранится                                         | Пример содержимого                               |
