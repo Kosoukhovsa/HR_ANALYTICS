@@ -1,0 +1,171 @@
+{
+  "id": "131462799",
+  "url": "https://api.hh.ru/vacancies/131462799?host=hh.ru",
+  "area": {
+    "id": "1",
+    "url": "https://api.hh.ru/areas/1",
+    "name": "Москва"
+  },
+  "name": "Data Engineer",
+  "type": {
+    "id": "open",
+    "name": "Открытая"
+  },
+  "salary": {
+    "to": null,
+    "from": 150000,
+    "gross": false,
+    "currency": "RUR"
+  },
+  "address": {
+    "id": "20695367",
+    "lat": 55.778117,
+    "lng": 37.723744,
+    "raw": "Москва, Кирпичная улица, 7",
+    "city": "Москва",
+    "metro": {
+      "lat": 55.783096,
+      "lng": 37.719289,
+      "line_id": "3",
+      "line_name": "Арбатско-Покровская",
+      "station_id": "3.130",
+      "station_name": "Семеновская"
+    },
+    "street": "Кирпичная улица",
+    "building": "7",
+    "description": null,
+    "metro_stations": [
+      {
+        "lat": 55.783096,
+        "lng": 37.719289,
+        "line_id": "3",
+        "line_name": "Арбатско-Покровская",
+        "station_id": "3.130",
+        "station_name": "Семеновская"
+      },
+      {
+        "lat": 55.782057,
+        "lng": 37.7053,
+        "line_id": "3",
+        "line_name": "Арбатско-Покровская",
+        "station_id": "3.161",
+        "station_name": "Электрозаводская"
+      },
+      {
+        "lat": 55.782057,
+        "lng": 37.7053,
+        "line_id": "98",
+        "line_name": "Некрасовская",
+        "station_id": "98.802",
+        "station_name": "Электрозаводская"
+      },
+      {
+        "lat": 55.781111,
+        "lng": 37.705278,
+        "line_id": "135",
+        "line_name": "МЦД-3",
+        "station_id": "135.853",
+        "station_name": "Электрозаводская"
+      }
+    ]
+  },
+  "premium": false,
+  "snippet": {
+    "requirement": "Высшее образование (желательно по технической специальности). Опыт работы с БД PostgreSQL от 2 лет. Опыт разработки и внедрения технических решений...",
+    "responsibility": "Разработка структуры БД и хранимых процедур по бизнес-требованиям (мы используем PostgreSQL). Обсуждение и разработка бизнес-требований в части касающейся..."
+  },
+  "archived": false,
+  "contacts": null,
+  "employer": {
+    "id": "8327",
+    "url": "https://api.hh.ru/employers/8327",
+    "name": "TrueConf",
+    "trusted": true,
+    "logo_urls": {
+      "90": "https://img.hhcdn.ru/employer-logo-round/5795449.png",
+      "240": "https://img.hhcdn.ru/employer-logo-round/5795450.png",
+      "original": "https://img.hhcdn.ru/employer-logo-original-round/5795448.png"
+    },
+    "country_id": 1,
+    "alternate_url": "https://hh.ru/employer/8327",
+    "vacancies_url": "https://api.hh.ru/vacancies?employer_id=8327",
+    "accredited_it_employer": false
+  },
+  "has_test": false,
+  "schedule": {
+    "id": "fullDay",
+    "name": "Полный день"
+  },
+  "relations": [],
+  "created_at": "2026-03-23T12:05:58+0300",
+  "department": null,
+  "employment": {
+    "id": "full",
+    "name": "Полная занятость"
+  },
+  "experience": {
+    "id": "between1And3",
+    "name": "От 1 года до 3 лет"
+  },
+  "internship": false,
+  "adv_context": null,
+  "work_format": [
+    {
+      "id": "ON_SITE",
+      "name": "На месте работодателя"
+    }
+  ],
+  "night_shifts": false,
+  "published_at": "2026-03-23T12:05:58+0300",
+  "response_url": null,
+  "salary_range": {
+    "to": null,
+    "from": 150000,
+    "mode": {
+      "id": "MONTH",
+      "name": "За месяц"
+    },
+    "gross": false,
+    "currency": "RUR",
+    "frequency": null
+  },
+  "working_days": [],
+  "alternate_url": "https://hh.ru/vacancy/131462799",
+  "show_contacts": false,
+  "working_hours": [
+    {
+      "id": "HOURS_8",
+      "name": "8 часов"
+    }
+  ],
+  "is_adv_vacancy": false,
+  "employment_form": {
+    "id": "FULL",
+    "name": "Полная"
+  },
+  "accept_temporary": false,
+  "adv_response_url": null,
+  "insider_interview": null,
+  "professional_roles": [
+    {
+      "id": "96",
+      "name": "Программист, разработчик"
+    }
+  ],
+  "working_time_modes": [],
+  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=131462799",
+  "civil_law_contracts": [],
+  "show_logo_in_search": null,
+  "sort_point_distance": null,
+  "accept_labor_contract": true,
+  "work_schedule_by_days": [
+    {
+      "id": "FIVE_ON_TWO_OFF",
+      "name": "5/2"
+    }
+  ],
+  "working_time_intervals": [],
+  "fly_in_fly_out_duration": [],
+  "response_letter_required": true,
+  "accept_incomplete_resumes": false
+}

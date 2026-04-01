@@ -1,0 +1,200 @@
+{
+  "id": "131462799",
+  "area": {
+    "id": "1",
+    "url": "https://api.hh.ru/areas/1",
+    "name": "Москва"
+  },
+  "code": null,
+  "name": "Data Engineer",
+  "test": null,
+  "type": {
+    "id": "open",
+    "name": "Открытая"
+  },
+  "hidden": false,
+  "salary": {
+    "to": null,
+    "from": 150000,
+    "gross": false,
+    "currency": "RUR"
+  },
+  "address": {
+    "lat": 55.778117,
+    "lng": 37.723744,
+    "raw": "Москва, Кирпичная улица, 7",
+    "city": "Москва",
+    "metro": {
+      "lat": 55.783096,
+      "lng": 37.719289,
+      "line_id": "3",
+      "line_name": "Арбатско-Покровская",
+      "station_id": "3.130",
+      "station_name": "Семеновская"
+    },
+    "street": "Кирпичная улица",
+    "building": "7",
+    "can_edit": false,
+    "description": null,
+    "metro_stations": [
+      {
+        "lat": 55.783096,
+        "lng": 37.719289,
+        "line_id": "3",
+        "line_name": "Арбатско-Покровская",
+        "station_id": "3.130",
+        "station_name": "Семеновская"
+      },
+      {
+        "lat": 55.782057,
+        "lng": 37.7053,
+        "line_id": "3",
+        "line_name": "Арбатско-Покровская",
+        "station_id": "3.161",
+        "station_name": "Электрозаводская"
+      },
+      {
+        "lat": 55.782057,
+        "lng": 37.7053,
+        "line_id": "98",
+        "line_name": "Некрасовская",
+        "station_id": "98.802",
+        "station_name": "Электрозаводская"
+      },
+      {
+        "lat": 55.781111,
+        "lng": 37.705278,
+        "line_id": "135",
+        "line_name": "МЦД-3",
+        "station_id": "135.853",
+        "station_name": "Электрозаводская"
+      }
+    ]
+  },
+  "premium": false,
+  "approved": true,
+  "archived": false,
+  "contacts": null,
+  "employer": {
+    "id": "8327",
+    "url": "https://api.hh.ru/employers/8327",
+    "name": "TrueConf",
+    "trusted": true,
+    "logo_urls": {
+      "90": "https://img.hhcdn.ru/employer-logo-round/5795449.png",
+      "240": "https://img.hhcdn.ru/employer-logo-round/5795450.png",
+      "original": "https://img.hhcdn.ru/employer-logo-original-round/5795448.png"
+    },
+    "country_id": 1,
+    "alternate_url": "https://hh.ru/employer/8327",
+    "vacancies_url": "https://api.hh.ru/vacancies?employer_id=8327",
+    "is_identified_by_esia": false,
+    "accredited_it_employer": false
+  },
+  "has_test": false,
+  "schedule": {
+    "id": "fullDay",
+    "name": "Полный день"
+  },
+  "languages": [],
+  "relations": [],
+  "created_at": "2026-03-23T12:05:58+0300",
+  "department": null,
+  "employment": {
+    "id": "full",
+    "name": "Полная занятость"
+  },
+  "experience": {
+    "id": "between1And3",
+    "name": "От 1 года до 3 лет"
+  },
+  "internship": false,
+  "key_skills": [
+    {
+      "name": "PostgreSQL"
+    },
+    {
+      "name": "Администрирование баз данных"
+    },
+    {
+      "name": "Разработка баз данных"
+    }
+  ],
+  "accept_kids": false,
+  "description": "<p>IT-компания <strong>TrueConf</strong> ищет опытного<strong> </strong><strong>Data Engineer/Backend</strong><strong> </strong>с уверенным бекграундом на коммерческих продуктах.<br /><br />На данный момент не рассматриваем кандидата на &quot;удаленку&quot;, только <strong>работа в офисе</strong>.</p> <p><strong>Чем предстоит заниматься:</strong></p> <ul> <li> <p>Разработка структуры БД и хранимых процедур по бизнес-требованиям (<strong>мы используем</strong> <strong>PostgreSQL</strong>);</p> </li> <li> <p>Обсуждение и разработка бизнес-требований в части касающейся базы данных;</p> </li> <li> <p>Консультация смежных отделов по работе postgres;</p> </li> <li> <p>Проведение code review имеющейся кодовой базы, ее рефакторинг;</p> </li> <li> <p>Поиск узких мест и улучшение производительности на стороне БД;</p> </li> <li> <p>В исключительных случаях оказание помощи в разборе происшествий, связанных с работой БД.</p> </li> <li> <p>Оптимизация запросов и поиск решений оптимизации</p> </li> </ul> <p><strong>Основные требования:</strong></p> <ul> <li> <p>Высшее образование (желательно по технической специальности);</p> </li> <li> <p>Опыт работы с БД PostgreSQL <strong>от 2 лет.</strong></p> </li> <li> <p><strong>Опыт разработки и внедрения технических решений для получения, обработки и хранения данных</strong></p> </li> </ul> <p><strong>Будет существенным плюсом:</strong></p> <ul> <li> <p>Знание систем мониторинга, умение разбирать графики и оценивать общее состояние системы в части postgres;</p> </li> <li> <p>Знание основ работы SQLite;</p> </li> <li> <p>Владение системами тестирования, разработкой и реализацией тестового покрытия исходного кода;</p> </li> <li> <p>Знание отказоустойчивых кластеров postgres;</p> </li> <li> <p>Знание pgBouncer, patroni, pgtap;</p> </li> <li> <p>Знание систем доставки обновлений;</p> </li> <li> <p>Опыт работы в проектах разработки коробочного продукта.</p> </li> </ul> <p><strong>Мы предлагаем:</strong></p> <ul> <li> <p>Стать частью компании, развивающей отечественный рынок видеоконференцсвязи;</p> </li> <li> <p>Официальное трудоустройство в аккредитованную IT-компанию;</p> </li> <li> <p>Уютный офис в шаговой доступности от м. Электрозаводская и м. Семёновская;</p> </li> <li> <p>Гибкий график – можно начинать работать в удобное для себя время;</p> </li> <li> <p>Комфортные условия для работы: оборудованное всем необходимым рабочее место, лаунж зона для отдыха с обустроенной кухней, свежие фрукты, чай/кофе и печеньки для быстрых перекусов, корпоративные электросамокаты и многое другое;</p> </li> <li> <p>Активный корпоративный отдых: митапы, квизы, еженедельные вечеринки в офисе, выездные тимбилдинги, кальяны, футбол, клуб настольных игр;</p> </li> <li> <p>Спортзал на территории офиса;</p> </li> <li> <p>Здоровый микроклимат в коллективе и работа в динамично растущей команде.</p> </li> </ul> <p><strong>P.S.</strong></p> <p>Уважаемые соискатели, в сопроводительном письме:</p> <p>Уточните, какие пункты из разделов &quot;наши ожидания&quot; и &quot;будет преимуществом&quot; в вакансии совпадают с вашим стеком?</p> <p>Поделитесь ссылкой на свой репозиторий, если она не указана в резюме</p> <p>Укажите желаемый уровень ЗП.</p> <p>Рядом с какой станцией метро Вы проживаете?</p> <p>Подходит ли вам график 5/2 в офисе на full time?</p> <p> </p>",
+  "work_format": [
+    {
+      "id": "ON_SITE",
+      "name": "На месте работодателя"
+    }
+  ],
+  "billing_type": {
+    "id": "standard",
+    "name": "Стандарт"
+  },
+  "night_shifts": false,
+  "published_at": "2026-03-23T12:05:58+0300",
+  "response_url": null,
+  "salary_range": {
+    "to": null,
+    "from": 150000,
+    "mode": {
+      "id": "MONTH",
+      "name": "За месяц"
+    },
+    "gross": false,
+    "currency": "RUR",
+    "frequency": null
+  },
+  "working_days": [],
+  "alternate_url": "https://hh.ru/vacancy/131462799",
+  "auto_response": {
+    "accept_auto_response": true
+  },
+  "show_contacts": false,
+  "working_hours": [
+    {
+      "id": "HOURS_8",
+      "name": "8 часов"
+    }
+  ],
+  "allow_messages": true,
+  "age_restriction": null,
+  "employment_form": {
+    "id": "FULL",
+    "name": "Полная"
+  },
+  "specializations": [],
+  "accept_temporary": false,
+  "negotiations_url": null,
+  "insider_interview": null,
+  "accept_handicapped": false,
+  "initial_created_at": "2026-03-23T12:05:58+0300",
+  "professional_roles": [
+    {
+      "id": "96",
+      "name": "Программист, разработчик"
+    }
+  ],
+  "working_time_modes": [],
+  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=131462799",
+  "branded_description": null,
+  "civil_law_contracts": [],
+  "show_logo_in_search": null,
+  "driver_license_types": [],
+  "suitable_resumes_url": null,
+  "accept_labor_contract": true,
+  "closed_for_applicants": false,
+  "work_schedule_by_days": [
+    {
+      "id": "FIVE_ON_TWO_OFF",
+      "name": "5/2"
+    }
+  ],
+  "working_time_intervals": [],
+  "fly_in_fly_out_duration": [],
+  "quick_responses_allowed": false,
+  "response_letter_required": true,
+  "accept_incomplete_resumes": false,
+  "vacancy_constructor_template": null
+}

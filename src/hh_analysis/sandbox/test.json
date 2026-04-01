@@ -1,0 +1,93 @@
+{
+  "id": "131395071",
+  "url": "https://api.hh.ru/vacancies/131395071?host=hh.ru",
+  "area": {
+    "id": "1",
+    "url": "https://api.hh.ru/areas/1",
+    "name": "Москва"
+  },
+  "name": "Технический директор (CTO)",
+  "type": {
+    "id": "anonymous",
+    "name": "Анонимная"
+  },
+  "salary": null,
+  "address": null,
+  "premium": false,
+  "snippet": {
+    "requirement": "Опыт и экспертиза. Опыт работы в роли CTO / Head of <highlighttext>Engineering</highlighttext> в продуктовых it-компаниях (предпочтительно с AI/ML/highload...",
+    "responsibility": "...тестирование, инфраструктура и техническая поддержка (ML/CV-<highlighttext>инженеры</highlighttext>, DevOps/SRE, backend/frontend dev, <highlighttext>data</highlighttext>). Настройка и развитие процессов разработки: CI..."
+  },
+  "archived": false,
+  "contacts": null,
+  "employer": {
+    "name": "IT-компания, разрабатывающая продукты и сервисы на основе искусственного интеллекта для индустрии здравоохранения",
+    "trusted": true
+  },
+  "has_test": false,
+  "schedule": {
+    "id": "fullDay",
+    "name": "Полный день"
+  },
+  "relations": [],
+  "created_at": "2026-03-19T17:23:34+0300",
+  "department": null,
+  "employment": {
+    "id": "full",
+    "name": "Полная занятость"
+  },
+  "experience": {
+    "id": "moreThan6",
+    "name": "Более 6 лет"
+  },
+  "internship": false,
+  "adv_context": null,
+  "work_format": [
+    {
+      "id": "ON_SITE",
+      "name": "На месте работодателя"
+    }
+  ],
+  "night_shifts": false,
+  "published_at": "2026-03-19T17:23:34+0300",
+  "response_url": null,
+  "salary_range": null,
+  "working_days": [],
+  "alternate_url": "https://hh.ru/vacancy/131395071",
+  "show_contacts": false,
+  "working_hours": [
+    {
+      "id": "OTHER",
+      "name": "Другое"
+    }
+  ],
+  "is_adv_vacancy": false,
+  "employment_form": {
+    "id": "FULL",
+    "name": "Полная"
+  },
+  "accept_temporary": false,
+  "adv_response_url": null,
+  "insider_interview": null,
+  "professional_roles": [
+    {
+      "id": "125",
+      "name": "Технический директор (CTO)"
+    }
+  ],
+  "working_time_modes": [],
+  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=131395071",
+  "civil_law_contracts": [],
+  "sort_point_distance": null,
+  "accept_labor_contract": true,
+  "work_schedule_by_days": [
+    {
+      "id": "OTHER",
+      "name": "Другое"
+    }
+  ],
+  "working_time_intervals": [],
+  "fly_in_fly_out_duration": [],
+  "response_letter_required": false,
+  "accept_incomplete_resumes": false
+}

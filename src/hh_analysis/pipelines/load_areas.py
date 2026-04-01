@@ -14,7 +14,7 @@ def load_data():
     cur = conn.cursor()
 
     query = """
-        INSERT INTO dim_area (area_id, parent_area_id, area_name, area_level)
+        INSERT INTO mart.dim_area (area_id, parent_area_id, area_name, area_level)
         VALUES (%s, %s, %s, %s)
         ON CONFLICT (area_id) DO NOTHING
     """
