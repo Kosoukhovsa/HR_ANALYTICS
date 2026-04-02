@@ -1,4 +1,13 @@
 -- EMPLOYEES
+with ranked as (
+    select
+        vacancy_json,
+        row_number() over (
+            partition by vacancy_json->'employer'->>'id'
+            order by loaded_at desc) as rn
+    from raw.hh_vacancy    
+)
+
 insert into stg.employer (
     employer_id,
     employer_name,
@@ -22,10 +31,10 @@ select distinct
     (vacancy_json->'employer'->>'accredited_it_employer')::boolean,
     (vacancy_json->'employer'->>'trusted')::boolean
 
-from raw.hh_vacancy
-
-where vacancy_json->'employer' is not null
-  and nullif(vacancy_json->'employer'->>'id','') is not null
+from ranked
+where rn = 1 and
+    vacancy_json->'employer' is not null and
+    nullif(vacancy_json->'employer'->>'id','') is not null
 
 on conflict (employer_id)
 do update set
@@ -38,6 +47,22 @@ do update set
     trusted = excluded.trusted;
 
 -- VACANCIES
+with ranked as (
+    select
+        vacancy_id,
+        vacancy_json,
+        loaded_at,
+        area_id,
+        search_text,
+        page,
+        source_file,
+        row_number() over (
+            partition by vacancy_id
+            order by loaded_at desc
+        ) as rn
+    from raw.hh_vacancy
+)
+
 insert into stg.vacancy (
 
     vacancy_id,
@@ -144,7 +169,8 @@ select
     page,
     source_file
 
-from raw.hh_vacancy
+from ranked
+where rn = 1
 
 on conflict (vacancy_id)
 do update set
@@ -178,4 +204,9 @@ do update set
     accept_labor_contract = excluded.accept_labor_contract,
     accept_incomplete_resumes = excluded.accept_incomplete_resumes,
     night_shifts = excluded.night_shifts,
-    employer_id = excluded.employer_id;
+    employer_id = excluded.employer_id,
+    raw_loaded_at = excluded.raw_loaded_at,
+    raw_area_id = excluded.raw_area_id,
+    raw_search_text = excluded.raw_search_text,
+    raw_page = excluded.raw_page,
+    raw_source_file = excluded.raw_source_file;

@@ -1,6 +1,6 @@
 {
-  "id": "131462799",
-  "url": "https://api.hh.ru/vacancies/131462799?host=hh.ru",
+  "id": "131646127",
+  "url": "https://api.hh.ru/vacancies/131646127?host=hh.ru",
   "area": {
     "id": "1",
     "url": "https://api.hh.ru/areas/1",
@@ -11,84 +11,83 @@
     "id": "open",
     "name": "Открытая"
   },
-  "salary": {
-    "to": null,
-    "from": 150000,
-    "gross": false,
-    "currency": "RUR"
-  },
+  "salary": null,
   "address": {
-    "id": "20695367",
-    "lat": 55.778117,
-    "lng": 37.723744,
-    "raw": "Москва, Кирпичная улица, 7",
+    "id": "23914347",
+    "lat": 55.74155520979022,
+    "lng": 37.537525501717845,
+    "raw": "Москва, Кутузовский проспект, 30",
     "city": "Москва",
     "metro": {
-      "lat": 55.783096,
-      "lng": 37.719289,
-      "line_id": "3",
-      "line_name": "Арбатско-Покровская",
-      "station_id": "3.130",
-      "station_name": "Семеновская"
+      "lat": 55.747222,
+      "lng": 37.532222,
+      "line_id": "95",
+      "line_name": "МЦК",
+      "station_id": "95.537",
+      "station_name": "Деловой центр"
     },
-    "street": "Кирпичная улица",
-    "building": "7",
+    "street": "Кутузовский проспект",
+    "building": "30",
     "description": null,
     "metro_stations": [
       {
-        "lat": 55.783096,
-        "lng": 37.719289,
-        "line_id": "3",
-        "line_name": "Арбатско-Покровская",
-        "station_id": "3.130",
-        "station_name": "Семеновская"
+        "lat": 55.747222,
+        "lng": 37.532222,
+        "line_id": "95",
+        "line_name": "МЦК",
+        "station_id": "95.537",
+        "station_name": "Деловой центр"
       },
       {
-        "lat": 55.782057,
-        "lng": 37.7053,
-        "line_id": "3",
-        "line_name": "Арбатско-Покровская",
-        "station_id": "3.161",
-        "station_name": "Электрозаводская"
+        "lat": 55.740544,
+        "lng": 37.5341,
+        "line_id": "4",
+        "line_name": "Филевская",
+        "station_id": "4.73",
+        "station_name": "Кутузовская"
       },
       {
-        "lat": 55.782057,
-        "lng": 37.7053,
-        "line_id": "98",
-        "line_name": "Некрасовская",
-        "station_id": "98.802",
-        "station_name": "Электрозаводская"
+        "lat": 55.740833,
+        "lng": 37.533333,
+        "line_id": "95",
+        "line_name": "МЦК",
+        "station_id": "95.536",
+        "station_name": "Кутузовская"
       },
       {
-        "lat": 55.781111,
-        "lng": 37.705278,
-        "line_id": "135",
-        "line_name": "МЦД-3",
-        "station_id": "135.853",
-        "station_name": "Электрозаводская"
+        "lat": 55.741944,
+        "lng": 37.533056,
+        "line_id": "136",
+        "line_name": "МЦД-4",
+        "station_id": "136.898",
+        "station_name": "Кутузовская"
       }
     ]
   },
   "premium": false,
   "snippet": {
-    "requirement": "Высшее образование (желательно по технической специальности). Опыт работы с БД PostgreSQL от 2 лет. Опыт разработки и внедрения технических решений...",
-    "responsibility": "Разработка структуры БД и хранимых процедур по бизнес-требованиям (мы используем PostgreSQL). Обсуждение и разработка бизнес-требований в части касающейся..."
+    "requirement": "Опыт разработки ETL- процессов. Знание DWH. Опыт работы c Clickhouse. Опыт работы с Greenplum. Опыт работы с Airflow.",
+    "responsibility": "Проект предполагает создание полностью нового дашборда на BI-платформе Банка (АС Навигатор), который мог бы выполнять те же функции, что..."
   },
   "archived": false,
+  "branding": {
+    "type": "MAKEUP",
+    "tariff": null
+  },
   "contacts": null,
   "employer": {
-    "id": "8327",
-    "url": "https://api.hh.ru/employers/8327",
-    "name": "TrueConf",
+    "id": "5050306",
+    "url": "https://api.hh.ru/employers/5050306",
+    "name": "IT_One",
     "trusted": true,
     "logo_urls": {
-      "90": "https://img.hhcdn.ru/employer-logo-round/5795449.png",
-      "240": "https://img.hhcdn.ru/employer-logo-round/5795450.png",
-      "original": "https://img.hhcdn.ru/employer-logo-original-round/5795448.png"
+      "90": "https://img.hhcdn.ru/employer-logo/7259552.png",
+      "240": "https://img.hhcdn.ru/employer-logo/7259553.png",
+      "original": "https://img.hhcdn.ru/employer-logo-original/1409973.png"
     },
     "country_id": 1,
-    "alternate_url": "https://hh.ru/employer/8327",
-    "vacancies_url": "https://api.hh.ru/vacancies?employer_id=8327",
+    "alternate_url": "https://hh.ru/employer/5050306",
+    "vacancies_url": "https://api.hh.ru/vacancies?employer_id=5050306",
     "accredited_it_employer": false
   },
   "has_test": false,
@@ -97,7 +96,7 @@
     "name": "Полный день"
   },
   "relations": [],
-  "created_at": "2026-03-23T12:05:58+0300",
+  "created_at": "2026-03-30T08:47:25+0300",
   "department": null,
   "employment": {
     "id": "full",
@@ -116,21 +115,11 @@
     }
   ],
   "night_shifts": false,
-  "published_at": "2026-03-23T12:05:58+0300",
+  "published_at": "2026-03-30T08:47:25+0300",
   "response_url": null,
-  "salary_range": {
-    "to": null,
-    "from": 150000,
-    "mode": {
-      "id": "MONTH",
-      "name": "За месяц"
-    },
-    "gross": false,
-    "currency": "RUR",
-    "frequency": null
-  },
+  "salary_range": null,
   "working_days": [],
-  "alternate_url": "https://hh.ru/vacancy/131462799",
+  "alternate_url": "https://hh.ru/vacancy/131646127",
   "show_contacts": false,
   "working_hours": [
     {
@@ -148,14 +137,14 @@
   "insider_interview": null,
   "professional_roles": [
     {
-      "id": "96",
-      "name": "Программист, разработчик"
+      "id": "165",
+      "name": "Дата-сайентист"
     }
   ],
   "working_time_modes": [],
-  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=131462799",
+  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=131646127",
   "civil_law_contracts": [],
-  "show_logo_in_search": null,
+  "show_logo_in_search": true,
   "sort_point_distance": null,
   "accept_labor_contract": true,
   "work_schedule_by_days": [
@@ -166,6 +155,6 @@
   ],
   "working_time_intervals": [],
   "fly_in_fly_out_duration": [],
-  "response_letter_required": true,
+  "response_letter_required": false,
   "accept_incomplete_resumes": false
 }
