@@ -32,6 +32,18 @@ where d.vacancy_detail_json ? 'professional_roles'
   and nullif(pr.value->>'id', '') is not null
 on conflict do nothing;
 
--- Заполнить таблицу с описанием вакансий
+-- Заполнение подробного описания вакансий
 
-insert into
+insert into stg.vacancy_detail (
+	vacancy_id,
+	vacancy_description
+)
+select 
+vacancy_id,
+utils.html_to_text(vacancy_detail_json ->> 'description') as vacancy_description
+from raw.hh_vacancy_detail
+on conflict(vacancy_id) 
+do update set 
+ 	vacancy_description = excluded.vacancy_description
+ 	;
+
