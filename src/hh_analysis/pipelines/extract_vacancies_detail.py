@@ -8,7 +8,7 @@ from hh_analysis.api.hh_client import get_vacancy_detail
 from hh_analysis.storage.postgres import get_connection
 
 
-BATCH_SIZE = 700
+BATCH_SIZE = 10000
 SLEEP_SECONDS = 0.5
 
 

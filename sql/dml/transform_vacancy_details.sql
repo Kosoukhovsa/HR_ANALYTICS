@@ -45,5 +45,5 @@ from raw.hh_vacancy_detail
 on conflict(vacancy_id) 
 do update set 
  	vacancy_description = excluded.vacancy_description
- 	;
+;
 

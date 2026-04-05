@@ -114,3 +114,36 @@ on raw.hh_vacancy_detail(vacancy_id);
 
 create index if not exists ix_raw_hh_vacancy_detail_loaded_at
 on raw.hh_vacancy_detail(loaded_at);
+
+------------------------------------------------------------
+-- Табдица hh_employer_detail для детальных данных по работодателю
+------------------------------------------------------------
+
+create table if not exists raw.hh_employer_detail (
+    raw_employer_detail_id bigserial primary key,
+    loaded_at timestamp not null,
+    employer_id bigint not null,
+    employer_detail_json jsonb not null,
+    source_system text not null default 'hh_api'
+);
+
+comment on table raw.hh_employer_detail is
+'Сырые детальные работодателей HH API. 1 строка = 1 работодатель.';
+
+comment on column raw.hh_employer_detail.raw_employer_detail_id is
+'Технический surrogate key записи raw detail слоя';
+
+comment on column raw.hh_employer_detail.loaded_at is
+'Дата и время загрузки';
+
+comment on column raw.hh_employer_detail.employer_id is
+'Идентификатор работодателя HH';
+
+comment on column raw.hh_employer_detail.employer_detail_json is
+'Полный JSON работодателя, полученный из endpoint /employers/{id}';
+
+comment on column raw.hh_employer_detail.source_system is
+'Источник данных';
+
+create unique index if not exists ux_raw_hh_employer_detail_employer_id
+on raw.hh_employer_detail(employer_id);

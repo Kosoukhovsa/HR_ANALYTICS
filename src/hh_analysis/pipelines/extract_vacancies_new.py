@@ -10,21 +10,16 @@ from typing import Iterable
 from hh_analysis.api.hh_client import get_vacancies_page
 from hh_analysis.config.settings import RAW_DATA_DIR
 from hh_analysis.storage.files import save_json
-
-
-# ------------------------------------------------------------
-# Temporary pilot settings.
-# For the first stage it is simpler to define them here directly.
-# Later they can be moved to config, CLI arguments, database, etc.
-# ------------------------------------------------------------
-SEARCH_TEXT = "data engineer"
-AREA_IDS = [1]  # Example: 1 = Moscow. Later you can load area ids from Postgres.
-PER_PAGE = 100
-MAX_PAGES_PER_AREA = 10
-PERIOD_DAYS = 60
-ONLY_WITH_SALARY = False
-REQUEST_PAUSE_SECONDS = 0.5
-
+from hh_analysis.config.settings import (SEARCH_TEXT, 
+                                        AREA_IDS, 
+                                        PER_PAGE, 
+                                        MAX_PAGES_PER_AREA,
+                                        PERIOD_DAYS,
+                                        ONLY_WITH_SALARY,
+                                        REQUEST_PAUSE_SECONDS,
+                                        PERIOD_DATE_FROM,
+                                        PERIOD_DATE_TO
+                                        )
 
 def build_page_file_path(
     load_dt: datetime,
@@ -58,6 +53,8 @@ def save_vacancies_page(
     page: int,
     per_page: int,
     loaded_at: str,
+    date_from: datetime | None = None,
+    date_to: datetime | None = None,
 ) -> None:
     """
     Save one API response page together with technical metadata.
@@ -88,6 +85,8 @@ def extract_area_vacancies(
     period_days: int | None = None,
     only_with_salary: bool = False,
     pause_seconds: float = 0.0,
+    date_from: datetime | None = None,
+    date_to: datetime | None = None,
 ) -> None:
     """
     Extract vacancies for one area and save each page as raw JSON.
@@ -104,6 +103,8 @@ def extract_area_vacancies(
             per_page=per_page,
             period=period_days,
             only_with_salary=only_with_salary,
+            date_from=date_from,
+            date_to=date_to,
         )
     
     total_pages = page_0.get("pages", 0)
@@ -125,6 +126,8 @@ def extract_area_vacancies(
             per_page=per_page,
             period=period_days,
             only_with_salary=only_with_salary,
+            date_from=date_from,
+            date_to=date_to,
         )
 
 
@@ -168,6 +171,8 @@ def extract_vacancies(
     period_days: int | None = None,
     only_with_salary: bool = False,
     pause_seconds: float = 0.0,
+    date_from: datetime | None = None,
+    date_to: datetime | None = None,
 ) -> None:
     """
     Extract vacancies for several areas.
@@ -184,6 +189,8 @@ def extract_vacancies(
             period_days=period_days,
             only_with_salary=only_with_salary,
             pause_seconds=pause_seconds,
+            date_from=date_from,
+            date_to=date_to,
         )
 
 
@@ -196,6 +203,8 @@ def main() -> None:
         period_days=PERIOD_DAYS,
         only_with_salary=ONLY_WITH_SALARY,
         pause_seconds=REQUEST_PAUSE_SECONDS,
+        date_from=PERIOD_DATE_FROM,
+        date_to=PERIOD_DATE_TO
     )
 
 

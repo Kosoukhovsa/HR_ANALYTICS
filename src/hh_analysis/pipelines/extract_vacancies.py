@@ -151,6 +151,7 @@ def extract_vacancies(
     period_days: int | None = None,
     only_with_salary: bool = False,
     pause_seconds: float = 0.0,
+    
 ) -> None:
     """
     Extract vacancies for several areas.
@@ -179,6 +180,7 @@ def main() -> None:
         period_days=PERIOD_DAYS,
         only_with_salary=ONLY_WITH_SALARY,
         pause_seconds=REQUEST_PAUSE_SECONDS,
+
     )
 
 
